@@ -9,5 +9,6 @@ RUN yum install git -y
 RUN yum install java -y
 RUN yum install sudo -y
 RUN yum install openssh-server -y
+RUN mkdir /jenkins
 RUN ssh-keygen -A
 CMD ["/usr/sbin/sshd","-D"] && /bin/bash
