@@ -5,6 +5,7 @@ RUN chmod +x kubectl
 RUN mv kubectl /usr/bin
 RUN mkdir /root/.kube/
 COPY /config /root/.kube/
+COPY /essentials/* /root/
 RUN yum install git -y
 RUN yum install java -y
 RUN yum install sudo -y
