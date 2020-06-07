@@ -5,7 +5,7 @@ kind: Config
 clusters:
 - cluster:
     server: https://192.168.42.236:8443
-    certificate-authority: /home/ajinkya/CD_using_k8s/essentials/ca.crt
+    certificate-authority: /root/ca.crt
   name: kubecluster
   
 contexts:
@@ -16,5 +16,5 @@ contexts:
 users:
 - name: ajinkya
   user:
-    client-key: /home/ajinkya/CD_using_k8s/essentials/client.key
-    client-certificate: /home/ajinkya/CD_using_k8s/essentials/client.crt
+    client-key: /root/client.key
+    client-certificate: /root/client.crt
