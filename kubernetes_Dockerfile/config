@@ -4,7 +4,7 @@ kind: Config
 
 clusters:
 - cluster:
-    server: https://192.168.42.236:8443
+    server: https://192.168.42.236:4243
     certificate-authority: /root/ca.crt
   name: kubecluster
   
